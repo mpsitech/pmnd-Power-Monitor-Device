@@ -1,0 +1,87 @@
+IexWdbeMdl v1.1.14
+ImeIMUnit.srefIxVBasetype	srefSilRefWdbeMUnit	sref	Title	Easy	srefKToolch	Comment
+mcu	efm8ub10f16g-c-qfn28	ubdk	SiLabs EFM8UB10 Development Kit	true	splcty
+	ImeIMPeripheral.sref
+	adc0
+	spi0
+	tmr0
+	usb0
+	ImeIMPeripheral.end
+	ImeIMModule.srefIxVBasetype	hsrefSupRefWdbeMModule	srefTplRefWdbeMModule	sref	Comment
+	ectr		hhstsrc_Easy_v1_0_Mcu	chrono	chronometer based on 100Hz clock
+		ImeIAMModulePar.x1SrefKKey	Val
+		div	10
+		ImeIAMModulePar.end
+		ImeIRMModuleMPeripheral.srefRefWdbeMPeripheral
+		tmr0
+		ImeIRMModuleMPeripheral.end
+	ectr			disp	display control (SHARP 128x128 via SPI)
+		ImeIRMModuleMPeripheral.srefRefWdbeMPeripheral
+		spi0
+		ImeIRMModuleMPeripheral.end
+	ehostif		usbhostif_Easy_v1_0_Mcu	hostif	USB host interface
+		ImeIRMModuleMModule.hsrefCorRefWdbeMModule	srefKFunction
+		chrono	hhstsrc
+		usbrxtx	rxtx
+		ImeIRMModuleMModule.end
+		ImeIRMModuleMPeripheral.srefRefWdbeMPeripheral
+		usb0
+		ImeIRMModuleMPeripheral.end
+	ectr			imeas	current measurement
+		ImeIRMModuleMPeripheral.srefRefWdbeMPeripheral
+		adc0
+		ImeIRMModuleMPeripheral.end
+	ectr			state	state monitor
+	oth		usbrxtx_slbs_v1_0_Mcu	usbrxtx	USB transceiver (host)
+		ImeIRMModuleMModule.hsrefCorRefWdbeMModule	srefKFunction
+		hostif	mgmt
+		ImeIRMModuleMModule.end
+	ImeIMModule.end
+mcu	efm8ub10f16g-c-qfn28	udua	SiLabs EFM8UB10 Development Kit via UART	true	splcty
+	ImeIMPeripheral.sref
+	adc0
+	spi0
+	tmr0
+	tmr1
+	uart1
+	ImeIMPeripheral.end
+	ImeIMModule.srefIxVBasetype	hsrefSupRefWdbeMModule	srefTplRefWdbeMModule	sref	Comment
+	ectr		hhstsrc_Easy_v1_0_Mcu	chrono	chronometer based on 100Hz clock
+		ImeIAMModulePar.x1SrefKKey	Val
+		div	10
+		ImeIAMModulePar.end
+		ImeIRMModuleMPeripheral.srefRefWdbeMPeripheral
+		tmr0
+		ImeIRMModuleMPeripheral.end
+	ectr			disp	display control (SHARP 128x128 via SPI)
+		ImeIRMModuleMPeripheral.srefRefWdbeMPeripheral
+		spi0
+		ImeIRMModuleMPeripheral.end
+	ehostif		uarthostif_Easy_v1_1_Mcu	hostif	UART host interface
+		ImeIRMModuleMModule.hsrefCorRefWdbeMModule	srefKFunction
+		chrono	hhstsrc
+		uartrx	rx
+		uarttx	tx
+		ImeIRMModuleMModule.end
+	ectr			imeas	current measurement
+		ImeIRMModuleMPeripheral.srefRefWdbeMPeripheral
+		adc0
+		ImeIRMModuleMPeripheral.end
+	ectr			state	state monitor
+	oth		uartrx_v1_0_Mcu	uartrx	UART receiver (host)
+		ImeIRMModuleMModule.hsrefCorRefWdbeMModule	srefKFunction
+		hostif	mgmt
+		ImeIRMModuleMModule.end
+		ImeIRMModuleMPeripheral.srefRefWdbeMPeripheral
+		uart1
+		tmr1
+		ImeIRMModuleMPeripheral.end
+	oth		uarttx_v1_0_Mcu	uarttx	UART transmitter (host)
+		ImeIRMModuleMModule.hsrefCorRefWdbeMModule	srefKFunction
+		hostif	mgmt
+		ImeIRMModuleMModule.end
+		ImeIRMModuleMPeripheral.srefRefWdbeMPeripheral
+		uart1
+		ImeIRMModuleMPeripheral.end
+	ImeIMModule.end
+ImeIMUnit.end

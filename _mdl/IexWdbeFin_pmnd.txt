@@ -1,0 +1,162 @@
+IexWdbeFin v1.1.9
+ImeIMUnit.sref
+ubdk
+	ImeIMBank.srefIxWdbeVIop	sref	srefKVoltstd
+	retrupd	p0	void
+		ImeIMPin.srefIxWdbeVIop	irefRefWdbeCPin	sref	Location
+		retr	0	p0.0
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				adcvs
+			ImeIJMPinSref.end
+		retr	0	p0.1
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				dispcs
+			ImeIJMPinSref.end
+		retr	0	p0.6
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+			spi0	sclk
+			ImeIJMPinSref.end
+		ImeIMPin.end
+	retrupd	p1	void
+		ImeIMPin.srefIxWdbeVIop	irefRefWdbeCPin	sref	Location
+		retr	0	p1.0
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+			spi0	mosi
+			ImeIJMPinSref.end
+		retr	0	p1.4
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				ledr
+			ImeIJMPinSref.end
+		retr	0	p1.5
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				ledg
+			ImeIJMPinSref.end
+		retr	0	p1.6
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				ledb
+			ImeIJMPinSref.end
+		ImeIMPin.end
+	retrupd	p2	void
+		ImeIMPin.srefIxWdbeVIop	irefRefWdbeCPin	sref	Location
+		retr	0	p2.3
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				dispen
+			ImeIJMPinSref.end
+		ImeIMPin.end
+	ImeIMBank.end
+	ImeIMInterrupt1.sref	Comment
+	TIMER0_IRQn
+	ImeIMInterrupt1.end
+	ImeICSignal1.iref
+	1
+	2
+	ImeICSignal1.end
+	ImeIMModule.hsrefSupRefWdbeMModule	sref
+		chrono
+		ImeIMSensitivity1.srefSrcIxVTbl	srefSrcUref
+		int	TIMER0_IRQn
+		ImeIMSensitivity1.end
+		disp
+		ImeIMPort.srefIxWdbeVIop	irefRefWdbeCPort	srefMdlIxVCat	sref	srefIxVDir	srefWdbeKHdltype	Width	Minmax	Defval	cpiSrefWdbeMPin	cprSrefWdbeMPort	csiSrefWdbeMSignal	Comment
+		ins	0	rtepin	dispen	out	sl	1			dispen
+		ins	0	rtepin	dispcs	out	sl	1			dispcs
+		ImeIMPort.end
+		state
+		ImeICPort.iref
+		1
+		ImeICPort.end
+		ImeIMPort.srefIxWdbeVIop	irefRefWdbeCPort	srefMdlIxVCat	sref	srefIxVDir	srefWdbeKHdltype	Width	Minmax	Defval	cpiSrefWdbeMPin	cprSrefWdbeMPort	csiSrefWdbeMSignal	Comment
+		ins	1	rtepin	ledr	out	sl	1			ledr
+		ins	1	rtepin	ledg	out	sl	1			ledg
+		ins	1	rtepin	ledb	out	sl	1			ledb
+		ImeIMPort.end
+	ImeIMModule.end
+udua
+	ImeIMBank.srefIxWdbeVIop	sref	srefKVoltstd
+	retrupd	p0	void
+		ImeIMPin.srefIxWdbeVIop	irefRefWdbeCPin	sref	Location
+		retr	0	p0.0
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				adcvs
+			ImeIJMPinSref.end
+		retr	0	p0.1
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				dispcs
+			ImeIJMPinSref.end
+		retr	0	p0.6
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+			spi0	sclk
+			ImeIJMPinSref.end
+		ImeIMPin.end
+	retrupd	p1	void
+		ImeIMPin.srefIxWdbeVIop	irefRefWdbeCPin	sref	Location
+		retr	0	p1.0
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+			spi0	mosi
+			ImeIJMPinSref.end
+		retr	0	p1.4
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				ledr
+			ImeIJMPinSref.end
+		retr	0	p1.5
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				ledg
+			ImeIJMPinSref.end
+		retr	0	p1.6
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				ledb
+			ImeIJMPinSref.end
+		ImeIMPin.end
+	retrupd	p2	void
+		ImeIMPin.srefIxWdbeVIop	irefRefWdbeCPin	sref	Location
+		retr	0	p2.1
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				txd
+			ImeIJMPinSref.end
+		retr	0	p2.2
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				rxd
+			ImeIJMPinSref.end
+		retr	0	p2.3
+			ImeIJMPinSref.srefX1RefWdbeMPeripheral	sref
+				dispen
+			ImeIJMPinSref.end
+		ImeIMPin.end
+	ImeIMBank.end
+	ImeIMInterrupt1.sref	Comment
+	UART1_IRQn
+	TIMER0_IRQn
+	ImeIMInterrupt1.end
+	ImeICSignal1.iref
+	1
+	2
+	ImeICSignal1.end
+	ImeIMModule.hsrefSupRefWdbeMModule	sref
+		chrono
+		ImeIMSensitivity1.srefSrcIxVTbl	srefSrcUref
+		int	TIMER0_IRQn
+		ImeIMSensitivity1.end
+		disp
+		ImeIMPort.srefIxWdbeVIop	irefRefWdbeCPort	srefMdlIxVCat	sref	srefIxVDir	srefWdbeKHdltype	Width	Minmax	Defval	cpiSrefWdbeMPin	cprSrefWdbeMPort	csiSrefWdbeMSignal	Comment
+		ins	0	rtepin	dispen	out	sl	1			dispen
+		ins	0	rtepin	dispcs	out	sl	1			dispcs
+		ImeIMPort.end
+		state
+		ImeICPort.iref
+		1
+		ImeICPort.end
+		ImeIMPort.srefIxWdbeVIop	irefRefWdbeCPort	srefMdlIxVCat	sref	srefIxVDir	srefWdbeKHdltype	Width	Minmax	Defval	cpiSrefWdbeMPin	cprSrefWdbeMPort	csiSrefWdbeMSignal	Comment
+		ins	1	rtepin	ledr	out	sl	1			ledr
+		ins	1	rtepin	ledg	out	sl	1			ledg
+		ins	1	rtepin	ledb	out	sl	1			ledb
+		ImeIMPort.end
+		uartrx
+		ImeIMSensitivity1.srefSrcIxVTbl	srefSrcUref
+		int	UART1_IRQn
+		ImeIMSensitivity1.end
+		uarttx
+		ImeIMSensitivity1.srefSrcIxVTbl	srefSrcUref
+		int	UART1_IRQn
+		ImeIMSensitivity1.end
+	ImeIMModule.end
+ImeIMUnit.end

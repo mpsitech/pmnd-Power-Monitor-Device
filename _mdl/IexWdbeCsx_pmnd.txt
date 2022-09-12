@@ -1,0 +1,73 @@
+IexWdbeCsx v1.1.9
+ImeIMUnit.sref
+ubdk
+	ImeIMVector1.srefIxVBasetype	sref	srefsKOption
+	tixlin	VecVPmndUbdkState	filfed
+		ImeIMVectoritem1.sref	Title	Comment
+		nc	offline
+		ready	ready
+		active	measurement in progress
+		ImeIMVectoritem1.end
+	ImeIMVector1.end
+	ImeIMModule.hsrefSupRefWdbeMModule	sref
+		imeas
+		ImeIMController.
+		
+			ImeIMCommand2.refNum	sref	srefIxVRettype	srefIvrRefWdbeMSignal	srefRvrRefWdbeMSignal	srefRerRefWdbeMSignal	Comment
+			0	set	void
+				ImeIAMCommandInvpar2.sref	srefIxWdbeVPartype	srefRefWdbeMVector	Length	Defval	srefRefWdbeMVectoritem	Comment
+				fir	uint8			7		exponent FIR filter, default 12.5ms @10.24ksps
+				ImeIAMCommandInvpar2.end
+			0	get	statsng
+				ImeIAMCommandRetpar2.sref	srefIxWdbeVPartype	srefRefWdbeMVector	Length	Comment
+				Vs	uint16			0.403mA per increment		0.00040293
+				ImeIAMCommandRetpar2.end
+			ImeIMCommand2.end
+		ImeIMController.end
+		state
+		ImeIMController.
+		
+			ImeIMCommand2.refNum	sref	srefIxVRettype	srefIvrRefWdbeMSignal	srefRvrRefWdbeMSignal	srefRerRefWdbeMSignal	Comment
+			0	get	statsng
+				ImeIAMCommandRetpar2.sref	srefIxWdbeVPartype	srefRefWdbeMVector	Length	Comment
+				tixVUbdkState	tix	VecVPmndUbdkState
+				ImeIAMCommandRetpar2.end
+			ImeIMCommand2.end
+		ImeIMController.end
+	ImeIMModule.end
+udua
+	ImeIMVector1.srefIxVBasetype	sref	srefsKOption
+	tixlin	VecVPmndUduaState	filfed
+		ImeIMVectoritem1.sref	Title	Comment
+		nc	offline
+		ready	ready
+		active	measurement in progress
+		ImeIMVectoritem1.end
+	ImeIMVector1.end
+	ImeIMModule.hsrefSupRefWdbeMModule	sref
+		imeas
+		ImeIMController.
+		
+			ImeIMCommand2.refNum	sref	srefIxVRettype	srefIvrRefWdbeMSignal	srefRvrRefWdbeMSignal	srefRerRefWdbeMSignal	Comment
+			0	set	void
+				ImeIAMCommandInvpar2.sref	srefIxWdbeVPartype	srefRefWdbeMVector	Length	Defval	srefRefWdbeMVectoritem	Comment
+				fir	uint8			7		exponent FIR filter, default 12.5ms @10.24ksps
+				ImeIAMCommandInvpar2.end
+			0	get	statsng
+				ImeIAMCommandRetpar2.sref	srefIxWdbeVPartype	srefRefWdbeMVector	Length	Comment
+				Vs	uint16			0.403mA per increment		0.00040293
+				ImeIAMCommandRetpar2.end
+			ImeIMCommand2.end
+		ImeIMController.end
+		state
+		ImeIMController.
+		
+			ImeIMCommand2.refNum	sref	srefIxVRettype	srefIvrRefWdbeMSignal	srefRvrRefWdbeMSignal	srefRerRefWdbeMSignal	Comment
+			0	get	statsng
+				ImeIAMCommandRetpar2.sref	srefIxWdbeVPartype	srefRefWdbeMVector	Length	Comment
+				tixVUduaState	tix	VecVPmndUduaState
+				ImeIAMCommandRetpar2.end
+			ImeIMCommand2.end
+		ImeIMController.end
+	ImeIMModule.end
+ImeIMUnit.end
